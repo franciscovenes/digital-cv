@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Francisco Venes - CV</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="personal-details">
+      <h1 class="name">Francisco Miguel dos Santos Venes</h1>
+      <p class="headline">
+        Junior Full-Stack Developer (React, Next.js, Node.js, PostgreSQL)
+      </p>
+      <ul>
+        <li>Lisbon, Portugal</li>
+        <li>
+          <a href="mailto:francisco.venes@gmail.com"
+            >francisco.venes@gmail.com</a
+          >
+        </li>
+        <li>+351 914463912</li>
+        <li>
+          <span>LinkedIn: </span>
+          <a
+            href="https://linkedin.com/in/francisco-venes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/francisco-venes</a
+          >
+        </li>
+        <li>
+          <span>Portfolio: </span>
+          <a
+            href="https://panchos-portfolio.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            panchos-portfolio.netlify.app</a
+          >
+        </li>
+        <li>
+          <span>GitHub: </span
+          ><a
+            href="https://github.com/franciscovenes"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/franciscovenes</a
+          >
+        </li>
+      </ul>
+      <img src="./img/profile.png" alt="Profile photo" />
+    </header>
+    <main class="content">
+      <section class="summary section">
+        <h2 class="section-title">Summary</h2>
+        <p>
+          Full-stack web developer completing a PhD in Sociology (thesis
+          submitted, defence in October 2026). Builds and deploys web projects
+          for community organisations, from the interface to the database and
+          self-managed Debian servers. Experienced in React, Next.js, Node.js, PostgreSQL and the
+          Strapi headless CMS. Trained to work independently on long projects,
+          analyse data and communicate with non-technical stakeholders. Works in
+          Portuguese, Spanish, English and Italian.
+        </p>
+      </section>
+
+      <section class="skills section">
+        <h2 class="section-title">Skills</h2>
+        <div id="frontend-skills" class="skills-field">
+          <h3>Frontend web development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/Sass</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Responsive web design</li>
+            <li>UI design with Figma</li>
+            <li>Git, GitHub and Forgejo</li>
+          </ul>
+        </div>
+        <div id="backend-skills" class="skills-field">
+          <h3>Backend development</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>Strapi headless CMS</li>
+            <li>Supabase</li>
+            <li>Node.js and Express</li>
+            <li>API design and implementation</li>
+          </ul>
+         <h3>Linux and deployment</h3>
+          <ul>
+            <li>Debian (desktop and VPS administration)</li>
+            <li>Command line and basic Bash scripting</li>
+            <li>apt package management</li>
+            <li>File permissions and ownership</li>
+            <li>nginx as a reverse proxy</li>
+            <li>PM2 process management</li>
+            <li>Webhook-based automated deployment</li>
+            <li>Self-hosted Git with Forgejo</li>
+          </ul></div>
+        <div id="linux-skills" class="skills-field">
+         
+        </div>
+        <div id="qrm-skills" class="skills-field">
+          <h3>Qualitative research methods</h3>
+          <ul>
+            <li>Semi-structured and life story interviews</li>
+            <li>Transcription of audio and video files</li>
+            <li>Participant observation</li>
+            <li>Data analysis with MAXQDA</li>
+          </ul>
+        </div>
+        <div id="other-skills" class="skills-field">
+          <h3>Other skills</h3>
+          <ul>
+            <li>Geographic Information Systems (GIS) with ArcGIS</li>
+            <li>Descriptive and inferential statistics with R and RStudio</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects section">
+        <h2 class="section-title">Web Projects</h2>
+        <!-- TODO for each project: add the stack, the live link, the repo link
+             (where public) and one result (users, what the client could do
+             afterwards). -->
+        <div class="project">
+          <h3>Crafts inventory web app</h3>
+          <p class="dates">2026</p>
+          <p>
+            Reusable inventory app for craft projects, designed to work for any
+            craft organisation or product type rather than a single client.
+            Built after an earlier inventory tool for a women's craft
+            organisation in Cuenca, Ecuador (2022 – 2023). Built with React and
+            Supabase.
+          </p>
+          <!-- TODO: project name, one or two features, demo and repo links. -->
+        </div>
+        <div class="project">
+          <h3>UDCB website and content management platform</h3>
+          <p class="dates">2021 – present</p>
+          <p>
+            Developed and maintain the website and content management platform
+            of the association Unidos em Defesa de Covas do Barroso: a Next.js
+            frontend and a Strapi backend with PostgreSQL, running on a
+            self-managed Debian VPS behind nginx and managed with PM2. Set up a
+            self-hosted Forgejo and a webhook-driven pipeline, so pushing to the
+            repository deploys the new version automatically. The source code
+            is private (client project).
+          </p>
+          <!-- TODO: live link, one result. -->
+        </div>
+        <div class="project">
+          <h3>Rincón del Pancho, restaurant ordering page</h3>
+          <p>
+            Spanish-language ordering page for a coastal cuisine restaurant
+            concept, adapted and customised from a Scrimba course project. Demo
+            project.
+          </p>
+          <!-- TODO: date, stack, what you changed beyond the course, demo link,
+               and confirm that no real payments are processed. -->
+        </div>
+      </section>
+
+      <section class="work section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="work-experience">
+          <h3>Unidos em Defesa de Covas do Barroso (UDCB)</h3>
+          <p class="role">Executive Coordinator</p>
+          <p class="dates">April 2025 – March 2026</p>
+          <p>
+            Executive coordination of the association.
+            <!-- TODO: add 1–2 concrete duties, including any technical work. -->
+          </p>
+          <p class="role">Project Coordinator (independent contractor)</p>
+          <p class="dates">November 2024 – March 2025</p>
+          <p>
+            Coordinated the project "Ouvir a Voz do Barroso" (Listening to the
+            Voice of Barroso), which gathered the perspectives of residents and
+            the diaspora on the Barroso region through dramatic expression and a
+            survey.
+          </p>
+        </div>
+
+        <div class="work-experience">
+          <h3>FLACSO Ecuador</h3>
+          <p class="role">
+            Teacher and Associated Researcher in Political Ecology
+          </p>
+          <p class="dates">October 2021 – March 2023</p>
+          <p>
+            Taught Sociology of Socioenvironmental Conflicts and Political
+            Ecology on the master's programme in Socioenvironmental Studies.
+          </p>
+        </div>
+        <div class="work-experience">
+          <h3>Foundation for Science and Technology</h3>
+          <p class="role">PhD Scholarship Grantee</p>
+          <p class="dates">September 2019 – November 2023</p>
+          <p>
+            Researched women's opposition to mining projects: qualitative data
+            collection and analysis, and writing of articles.
+          </p>
+        </div>
+        <div class="work-experience">
+          <h3>FLACSO Ecuador</h3>
+          <p class="role">
+            Researcher in Development, Environment and Territory
+          </p>
+          <p class="dates">October 2013 – August 2018</p>
+          <p>
+            Built a database on monetary and biophysical flows in China's trade
+            relations with South America and wrote an article. Researched
+            development banks and sustainable development in the Andean Amazon
+            and wrote a book chapter.
+          </p>
+        </div>
+        <div class="work-experience">
+          <h3>Cambridge ESOL Quito and Ludoteca School Quito</h3>
+          <p class="role">English and Sciences Teacher</p>
+          <p class="dates">January 2013 – July 2013</p>
+          <p>
+            Taught English to teenagers and adults, including preparation for
+            the Cambridge First Certificate in English, and natural and social
+            sciences.
+          </p>
+        </div>
+      </section>
+
+      <section class="education section">
+        <h2 class="section-title">Higher Education</h2>
+        <div class="education-experience">
+          <h3>PhD in Sociology, University of Coimbra</h3>
+          <p class="dates">September 2018 – October 2026</p>
+          <p>
+            Thesis submitted in February 2025; defence scheduled for October
+            2026. "The right to say no. Why do certain women in Ecuador and
+            Portugal oppose mining projects?"
+          </p>
+          <p class="extra">
+            Erasmus+ exchange (6 months, September 2023 – February 2024) at the
+            CISPAC research centre, Universidade de Santiago de Compostela.
+          </p>
+          <!-- After the defence, remove "scheduled" and say "PhD awarded October 2026".
+               Also update the Summary. -->
+        </div>
+        <div class="education-experience">
+          <h3>Master in Development Economics, FLACSO Ecuador</h3>
+          <p class="dates">October 2013 – October 2015</p>
+        </div>
+        <div class="education-experience">
+          <h3>Master in Biomedical Engineering, NOVA University Lisbon</h3>
+          <p class="dates">September 2008 – November 2011</p>
+          <p class="extra">
+            Erasmus exchange at the University of Pisa, 2008–2009.
+          </p>
+        </div>
+        <div class="education-experience">
+          <h3>Bachelor in Biomedical Sciences, NOVA University Lisbon</h3>
+          <p class="dates">September 2005 – June 2008</p>
+        </div>
+      </section>
+
+      <section class="training section">
+        <h2 class="section-title">Training and Certificates</h2>
+        <!-- TODO: link each certificate to its verification page on Scrimba,
+             e.g. by wrapping the title in an <a> with target="_blank" and
+             rel="noopener noreferrer". -->
+        <div class="education-experience">
+          <h3>Scrimba: Backend Developer Career Path</h3>
+          <p class="dates">2026</p>
+        </div>
+        <div class="education-experience">
+          <h3>Scrimba: Frontend Developer Career Path</h3>
+          <p class="dates">2023</p>
+        </div>
+      </section>
+
+      <section class="volunteer section">
+        <h2 class="section-title">Volunteering and Affiliations</h2>
+        <div class="volunteer-experience">
+          <h3>Unidos em Defesa de Covas do Barroso</h3>
+          <p class="place">Boticas, Portugal</p>
+          <p class="dates">2021 – present</p>
+          <!-- TODO: confirm this is still current; otherwise add an end date. -->
+          <ul>
+            <li>Manage communications and build networks</li>
+            <li>Coordinate events and campaigns</li>
+            <li>Act as spokesperson in international meetings</li>
+          </ul>
+        </div>
+        <div class="volunteer-experience">
+          <h3>Community Organization of Women "Sinchi Warmi"</h3>
+          <p class="place">Cuenca, Ecuador</p>
+          <p class="dates">2022 – 2023</p>
+          <ul>
+            <li>
+              Developed a web app to manage the organisation's crafts project
+              inventory
+            </li>
+            <li>Supported the writing of project proposals</li>
+          </ul>
+        </div>
+        <div class="volunteer-experience">
+          <h3>Association Citizenship Academy</h3>
+          <p class="place">Lisbon, Portugal</p>
+          <p class="dates">2013 – 2021</p>
+          <ul>
+            <li>Coordinated events and campaigns</li>
+            <li>Supported the writing of project proposals</li>
+            <li>Represented the association in international bodies</li>
+          </ul>
+        </div>
+        <div class="volunteer-experience">
+          <h3>Minka Urbana collective</h3>
+          <p class="place">Quito, Ecuador</p>
+          <p class="dates">2016 – 2018</p>
+          <ul>
+            <li>Managed communications and coordinated events and campaigns</li>
+            <li>Acted as spokesperson</li>
+          </ul>
+        </div>
+        <div class="volunteer-experience">
+          <h3>VI Ibero-American Congress of Development and Environment</h3>
+          <p class="place">Quito, Ecuador</p>
+          <p class="dates">2013</p>
+          <ul>
+            <li>Built the congress website and registration platform</li>
+            <li>
+              Supported administration and logistics as a member of the
+              organising committee
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="languages section">
+        <h2 class="section-title">Languages</h2>
+        <ul>
+          <li>Portuguese (native)</li>
+          <li>Spanish (C2)</li>
+          <li>English (C1)</li>
+          <li>Italian (C1)</li>
+          <li>French (A2)</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

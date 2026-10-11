@@ -1,0 +1,250 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  padding: 2rem;
+  background-color: #faf9f7;
+  color: #1f2937;
+  margin-inline: auto;
+  max-width: 880px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+p {
+  max-width: 70ch;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #c2410c;
+}
+
+/* Personal details - header */
+
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.headline {
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.personal-details > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+.personal-details > ul span {
+  font-weight: 600;
+}
+
+.personal-details > img {
+  display: none;
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-block-start: 2.5rem;
+}
+
+.section-title {
+  color: #c2410c;
+  width: fit-content;
+}
+
+.section-title::after {
+  content: "";
+  border-block-start: solid 2px #f4613e;
+  display: block;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dates {
+  font-style: italic;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #c2410c;
+}
+
+.summary {
+  display: block;
+}
+
+.skills-field > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.role {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.role:not(:first-of-type) {
+  margin-block-start: 1.5rem;
+}
+
+.place,
+.extra {
+  color: #4b5563;
+}
+
+.place {
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+.extra {
+  font-style: italic;
+  font-size: 0.9rem;
+  padding-inline-start: 0.25rem;
+}
+
+/* Languages section */
+.languages > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 48rem), print {
+  body {
+    padding: 2.5rem;
+  }
+
+  .personal-details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .headline {
+    font-size: 1.05rem;
+  }
+
+  .personal-details > ul {
+    align-self: end;
+  }
+
+  .personal-details > img {
+    display: block;
+    width: 150px;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    align-self: center;
+    justify-self: center;
+    aspect-ratio: 3 / 4;
+    border-radius: 0.5rem;
+  }
+
+  /* Languages section */
+
+  .languages > ul {
+    list-style-type: none;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+  }
+
+  .languages > ul > li + li::before {
+    content: "•";
+    padding-inline: 0.25rem;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  html {
+    font-size: 10.5pt;
+  }
+
+  body {
+    padding: 0;
+    background: white;
+    color: black;
+  }
+
+  .skills-field > ul {
+    grid-template-columns: repeat(3, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+
+  .projects,
+  .skills-field,
+  .work-experience,
+  .education-experience,
+  .volunteer-experience,
+  .languages,
+  .training-section {
+    break-inside: avoid;
+  }
+
+  .section-title {
+    break-after: avoid;
+  }
+
+  .extra,
+  .print-hide {
+    display: none;
+  }
+}
