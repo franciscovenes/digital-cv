@@ -206,6 +206,14 @@ a {
     content: "•";
     padding-inline: 0.25rem;
   }
+
+  .print-show {
+    display: none;
+  }
+
+  .print-show span {
+    color: #4b5563;
+  }
 }
 
 @media print {
@@ -246,5 +254,9 @@ a {
   .extra,
   .print-hide {
     display: none;
+  }
+
+  .print-show {
+    display: block;
   }
 }
