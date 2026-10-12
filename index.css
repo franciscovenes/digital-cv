@@ -214,6 +214,11 @@ a {
   .print-show span {
     color: #4b5563;
   }
+
+  .education-experience > a {
+    text-decoration: none;
+    color: #4b5563;
+  }
 }
 
 @media print {
