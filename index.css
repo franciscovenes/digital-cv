@@ -152,6 +152,14 @@ a {
   padding-inline-start: 0.25rem;
 }
 
+.print-show {
+  display: none;
+}
+
+.print-show span {
+  color: #4b5563;
+}
+
 /* Languages section */
 .languages > ul {
   display: flex;
@@ -205,19 +213,6 @@ a {
   .languages > ul > li + li::before {
     content: "•";
     padding-inline: 0.25rem;
-  }
-
-  .print-show {
-    display: none;
-  }
-
-  .print-show span {
-    color: #4b5563;
-  }
-
-  .education-experience > a {
-    text-decoration: none;
-    color: #4b5563;
   }
 }
 
